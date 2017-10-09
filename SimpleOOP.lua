@@ -1,3 +1,5 @@
+--[[ LuaSOOP - Simple Object Oriented Programming]]
+
 local object = {}
 
 -- Returns a table with .parent field and metatable __index pointing to self.
