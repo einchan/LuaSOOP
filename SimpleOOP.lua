@@ -26,7 +26,7 @@ end
 -- which copies the table to the instance unless :init() has been overridden.
 -- eg. ball = Toy:new({bouncy = true, colour = "red", price = 6.5})
 function object:new (params)
-    instance = object.subclass(self)
+    local instance = object.subclass(self)
     if type(params) == "table" then 
         instance:init(params)
     end
